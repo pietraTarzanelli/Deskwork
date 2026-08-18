@@ -1,0 +1,14 @@
+# Compiled Deskwork binary
+deskwork
+
+# Object files
+*.o
+
+# Runtime cache
+location.cache
+
+# Personal configuration
+config.conf
+
+# Debug files
+*.log
