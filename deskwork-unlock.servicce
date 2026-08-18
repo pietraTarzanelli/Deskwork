@@ -1,0 +1,13 @@
+[Unit]
+Description=Deskwork unlock listener
+After=graphical-session.target deskwork.service
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/deskwork/unlock-listener.sh
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=default.target
